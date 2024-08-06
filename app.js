@@ -9,6 +9,7 @@ const data = xlsx.utils.sheet_to_json(ws);
 // console.log(data);
 app.use(cors());
 app.use("/epmloyees_info", (req, res) => {
-  res.send(data);
+  // res.send(data);
+  res.send("Hello");
 });
 app.listen(3000);
